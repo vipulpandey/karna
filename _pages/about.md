@@ -4,17 +4,8 @@ layout: post
 permalink: /about/
 ---
 
-Karna is a Jekyll theme created with pinterest like pins. It is a freemium theme.
-
-For more themes visit - [**Webjeda Jekyll Themes**](https://blog.webjeda.com/jekyll-themes/){: target="_blank"}
-
-For Jekyll tutorials visit - [**Webjeda**](https://blog.webjeda.com/){: target="_blank"}
-
-Does the theme deserve a star?
-
-<a class="github-button" href="https://github.com/sharu725/karna" data-style="mega" data-count-href="/sharu725/karna/stargazers" data-count-api="/repos/sharu725/karna#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star sharu725/karna on GitHub">Star</a>
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-
+StatsMatter is an attempt to bring fact based analysis to the day to day informations.
+<!--
 **Buy this theme**
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="display: inline-block">
 <input type="hidden" name="cmd" value="_xclick">
@@ -55,3 +46,4 @@ The premium theme includes the following:
 3. Share bar in the article
 4. Different page widths
 5. Support
+-->
