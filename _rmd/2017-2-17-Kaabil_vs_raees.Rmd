@@ -1,7 +1,14 @@
 ---
 title: "Kaabil vs Raees( Bollywood Movies comparison)"
 author: "Vipul Pandey"
+layout: post
 date: "February 14, 2017"
+description: 
+color: 212121
+permalink: /kaabilraees/
+categories: entertainment bollywood box-office comparison
+width: 
+img: colle
 status: process
 published: false
 output: html_document

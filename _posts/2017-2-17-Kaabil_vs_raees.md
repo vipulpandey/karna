@@ -1,7 +1,14 @@
 ---
 title: "Kaabil vs Raees( Bollywood Movies comparison)"
 author: "Vipul Pandey"
+layout: post
 date: "February 14, 2017"
+description: 
+color: 212121
+permalink: /kaabilraees/
+categories: entertainment bollywood box-office comparison
+width: 
+img: colle
 status: publish
 published: true
 output: html_document
@@ -21,41 +28,9 @@ Getting the data:
 
 {% highlight r %}
 library(rvest)
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Loading required package: xml2
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Warning: package 'xml2' was built under R version 3.3.1
-{% endhighlight %}
-
-
-
-{% highlight r %}
 library(ggpubr)
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Warning: package 'ggpubr' was built under R version 3.3.2
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Loading required package: ggplot2
-{% endhighlight %}
-
-
-
-{% highlight r %}
+ 
+ 
 url <- "http://indiatoday.intoday.in/story/raees-vs-kaabil-box-office-collection-shah-rukh-hrithik-jolly-llb-2/1/882219.html"
  
 webpage <- read_html(url)
