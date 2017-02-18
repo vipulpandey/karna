@@ -8,7 +8,7 @@ color: 212121
 permalink: /kaabilraees/
 categories: entertainment bollywood box-office comparison
 width: medium
-img: collection-1.png
+img: karna.jpg
 status: process
 published: false
 output: html_document
