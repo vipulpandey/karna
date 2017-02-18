@@ -1,14 +1,14 @@
 ---
-title: "Kaabil vs Raees( Bollywood Movies comparison)"
+title: "Bollywood Fight: Kaabil vs Raees"
 author: "Vipul Pandey"
 layout: post
 date: "February 14, 2017"
-description: 
+description: "I am not a big fan of usual bollywood movies, but in a country that is obssesed with bollywood and bollywood    stars, it's really hard for anyone to be separate from this industries activities."
 color: 212121
 permalink: /kaabilraees/
 categories: entertainment bollywood box-office comparison
-width: 
-img: colle
+width: medium
+img: collection-1
 status: publish
 published: true
 output: html_document
@@ -22,7 +22,7 @@ I am not a big fan of usual bollywood movies, but in a country that is obssesed 
  
 Recently, Sharukh's and Hritik's ( bollywood superstars) fans were fighing all over the social media about who earned more money, apparently that's the paramenter of success in India big screens. Various sources of Media reported different facts and figures to declare a winner.
  
-However, I was really pissed at the parameter of comparison without the regard for all the facts and its relative cause on the outcome. So, I scrapped the data  from a famous media source and tried to find the real winner.
+However, I was really pissed at the parameter of comparison without the regard for all the facts and its relative cause on the outcome. So, I scrapped the data  from a famous media source (India Today) and tried to find the real winner.
  
 Getting the data:
 
@@ -99,13 +99,13 @@ final <- rbind(cbind(kaabil_df,Movies = "Kaabil"),cbind(raees_df,Movies = "Raees
 Plotting the final data frame:
  
 # 1) Comparison of total earnings:
-![plot of chunk collection](/figures/collection-1.png)
+![plot of chunk collection](/images/collection-1.png)
  
 But, is it right to declare the winner wrt to earnings? What about budget? Number of screen's the movies were released?
 Let's look further and decide for ourselves:
  
 # 2) Comparison of total net profit:
-![plot of chunk profit](/figures/profit-1.png)
+![plot of chunk profit](/images/profit-1.png)
  
  
 # 3) Number of Screes worldwide
