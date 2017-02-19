@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 StatsMatter is an attempt to bring fact based analysis to the day to day informations.
-<!--
+< !--
 **Buy this theme**
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="display: inline-block">
 <input type="hidden" name="cmd" value="_xclick">
