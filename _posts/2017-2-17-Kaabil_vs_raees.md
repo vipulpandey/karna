@@ -15,10 +15,6 @@ published: true
 output: html_document
 ---
  
-
- 
-## R Markdown
- 
 I am not a big fan of usual bollywood movies, but in a country that is obssesed with bollywood and bollywood stars, it's really hard for anyone to be separate from this industries activities.
  
 Recently, Sharukh's and Hritik's ( bollywood superstars) fans were fighing all over the social media about who earned more money, apparently that's the paramenter of success in India big screens. Various sources of Media reported different facts and figures to declare a winner.
