@@ -6,7 +6,8 @@ date: "February 14, 2017"
 description: "I am not a big fan of usual bollywood movies, but in a country that is obssesed with bollywood and bollywood    stars, it's really hard for anyone to be separate from this industries activities."
 color: 212121
 permalink: /kaabilraees/
-categories: entertainment bollywood box-office comparison
+categories: [R,quantitative,chart,line]
+tags: [entertainment,bollywood ,box-office ,comparison]
 width: medium
 img: kaabilvsraees.jpg
 status: publish
