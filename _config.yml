@@ -34,7 +34,7 @@ analytics: UA-77712361-1
 disqus-shortname: antaratma12
 # Contact form
 # Go to https://getsimpleform.com and get a API token by signing up with your email and enter that here
-api-token:   
+api-token: 154dd3a9dadbb5da8f624b34006531ba  
 
 include: [_pages]
 version: 0.8
