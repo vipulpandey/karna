@@ -4,6 +4,7 @@ title: Delhi's Odd even Rule: Pass or Fail (Interactive visualization)
 date: 2016-05-13 21:24:10 UTC
 img: pollution-in-delhi.jpg
 color: 60ffa0
+width: medium
 tags: [delhi,pollution,india]
 categories: [Tableau,quantitative,negative,interactive]
 ---

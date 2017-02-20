@@ -5,6 +5,7 @@ title: World's Oldest Civilizations: "Timeline, texts, media"
 date: 2016-05-13 21:24:10 UTC
 img: Indus-Valley-Civilization.jpg
 color: 60ffa0
+width: large
 tags: [world,history,civilization]
 categories: [history,timeline,media,text,interactive]
 ---
