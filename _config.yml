@@ -31,7 +31,7 @@ highlight: rouge
 analytics: UA-77712361-1
 
 # Comments
-disqus-shortname: antaratma12
+disqus-shortname: "antaratma12"
 # Contact form
 # Go to https://getsimpleform.com and get a API token by signing up with your email and enter that here
 api-token: 154dd3a9dadbb5da8f624b34006531ba  
