@@ -7,8 +7,9 @@ description: "In the current rage of political festival, Uttar Pradesh election 
 color: 364968
 permalink: /up_poll_survey/
 categories: politics emotionanalytics survey
+tags: [UP, india, election2017,BSP,"2017"]
 width: medium
-img: uttar-pradesh-opinion-poll-2017.jpg
+img: uttar-pradesh-election.jpg
 status: process
 published: false
 output: html_document
