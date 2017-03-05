@@ -6,14 +6,17 @@ date: "February 14, 2017"
 description: "I am not a big fan of usual bollywood movies, but in a country that is obssesed with bollywood and bollywood    stars, it's really hard for anyone to be separate from this industries activities."
 color: 212121
 permalink: /kaabilraees/
-categories: [R,quantitative,chart,line]
-tags: [entertainment,bollywood ,box-office ,comparison]
+categories: entertainment bollywood box-office comparison
 width: medium
-img: kaabilvsraees.jpg
+img: collection-1.png
 status: publish
 published: true
 output: html_document
 ---
+ 
+
+ 
+## R Markdown
  
 I am not a big fan of usual bollywood movies, but in a country that is obssesed with bollywood and bollywood stars, it's really hard for anyone to be separate from this industries activities.
  
@@ -25,9 +28,50 @@ Getting the data:
 
 {% highlight r %}
 library(rvest)
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Loading required package: xml2
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Warning: package 'xml2' was built under R version 3.3.1
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## 
+## Attaching package: 'rvest'
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## The following object is masked from 'package:readr':
+## 
+##     guess_encoding
+{% endhighlight %}
+
+
+
+{% highlight r %}
 library(ggpubr)
- 
- 
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Warning: package 'ggpubr' was built under R version 3.3.2
+{% endhighlight %}
+
+
+
+{% highlight r %}
 url <- "http://indiatoday.intoday.in/story/raees-vs-kaabil-box-office-collection-shah-rukh-hrithik-jolly-llb-2/1/882219.html"
  
 webpage <- read_html(url)

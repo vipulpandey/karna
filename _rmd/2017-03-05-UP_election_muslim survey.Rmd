@@ -1,0 +1,119 @@
+---
+title: "Who will win Muslims vote in  UP? "
+author: "Vipul Pandey"
+layout: post
+date: "March 05, 2017"
+description: "In the current rage of political festival, Uttar Pradesh election in India holds a really important role. Every party involved, are fighting with their maximum capacity to capture this largest and most diverse demographic state."
+color: 364968
+permalink: /up_poll_survey/
+categories: politics emotionanalytics survey
+width: medium
+img: uttar-pradesh-opinion-poll-2017.jpg
+status: process
+published: false
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r include=FALSE, echo=FALSE}
+
+loadNamespace("httr")
+library(tidyr)
+library(stringr)
+library(dplyr)
+library(ggplot2)
+```
+
+
+## Emotion Analysis of a Political Survey: Uttar Pradesh( India)
+
+In the current rage of political festival, Uttar Pradesh election in India holds a really important role. Every party involved, are fighting with their maximum capacity to capture this largest and most diverse demographic state.
+Here, I have used a small survey by reporters from [National Dastak](http://www.nationaldastak.com) doing survey at the ground level, joined some samples from videos and did emotion analytics using Microsoft API to get a snapshot of Muslims support in some of the important political districts.
+
+### Important places that came up in the survey of Eastern UP:
+
+### Maharajganj, Kushinagar, gorakhpur, Azamgarh, Mau, Baliya
+
+First, step is to take covert the video to the required quantitative information that involves frame by frame emotion detection with relative degree of probability. I have used Microsoft Emotions API to get the required analyzed data.
+
+### *Getting the feel of the data.*
+
+```{r reading_data,include=FALSE}
+library(readr)
+library(zoo)
+
+# short format
+f <- read_csv("D:/data_science_kaggle/Learners_material/Projects/Project_video_emotions/UP election/UP_muslim_pol_survey_short.csv")
+# adding the index frame wise
+f$rank = NA
+f$rank[which(f$id == 0)] <- 1:length(f$id[which(f$id == 0)])
+f$frames <- na.locf(f$rank)
+f$rank <- NULL
+#f_long <- read_csv("D:/data_science_kaggle/Learners_material/Projects/Project_video_emotions/UP #election/UP_muslim_pol_survey.csv")
+
+
+```
+```{r}
+## converting long format
+f_long <- f %>% gather(emotion, value, neutral:contempt)
+glimpse(f_long)
+
+```
+
+The data is really chaotic as far as face detection is concerned as the survey was done live and raw. Just to give the glimpse of how face were detected, I have included "face positions plot".
+
+## Total number of face detected : 95
+```{r face_positions, echo= FALSE}
+face_positions <- ggplot(f_long) + geom_point(aes(x = x, y = y, color = as.factor(id))) + 
+  ggtitle("Face Detection: Political Video Survey( India)") +theme_bw()
+
+face_positions
+
+```
+
+
+It is clear from the plot that face positions are very chaotic and noisy. So, here I have tried to capture the bigger picture, that is what is the combined sentiment of the crowd of the sampled video.
+
+## *Including Cumulative emotion detection*
+```{r emotion, echo=FALSE}
+ggplot(data = f_long, aes(x = start, y = value)) + geom_smooth(aes(color = emotion)) + facet_grid(emotion~.) + xlab("Time(in Ticks)") + ylab("Values")+ 
+  ggtitle("Emotion Detection: Political Video Survey( India)") +theme_bw()
+```
+
+To get a better relative sense, frame by frame:
+
+*Removing neutral emotion and gathering frame by frame.*
+
+```{r plot_without_neutral, echo=FALSE}
+f_emo <- f_long %>% filter(emotion != "neutral")
+
+ggplot(data = f_emo, aes(x = start, y = value)) + geom_smooth(aes(color = emotion)) + facet_grid(emotion~.) + xlab("Time(in Ticks)") + ylab("Values")+ 
+  ggtitle("Emotion Detection: Political Video Survey( India)") +theme_bw()
+
+```
+
+
+Now, to sum it up let's have a look at bar plot which brings the clarity about which emotion dominated throughout the survey.
+
+```{r final_bar_emo, echo= FALSE}
+f_emo %>% group_by(emotion) %>% summarise(sum = sum(value)) %>% arrange(sum) %>% ggplot(aes(x = emotion, y = sum)) + geom_bar(stat = "identity",aes( color = emotion,fill = emotion)) + theme_bw()
+
+```
+
+Although, it is difficult to give the final verdict based on limited and raw survey where the video is being captured in an unplanned setting, however it might come to our help that using analytics we can locate the "time stamp"" of interesting show of emotions and with additional minimal manual touch, it gives a good picture of the target audience about the given topic.   
+
+In this case, I checked all the interesting show of emotions, like    
+1. people were generally taking the interview lightly and hence the higher values of "happiness".    
+2. BSP( regional UP party) was mostly mentioned in the happy time slot.     
+3. There were visible show of "anger" and "disgust" against the SP( samajwadi party).    
+4. No mention of BJP (Bhartiya Janta Party), by the people.     
+
+# Final Verdict 
+
+>Based on the help provided by the "Emotion analytics" and some manual labor, Muslims are mostly inclined towards BSP in  Maharajganj, Kushinagar, gorakhpur, Azamgarh, Mau, Baliya political constituency.
+
+
