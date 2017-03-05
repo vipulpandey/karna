@@ -8,7 +8,7 @@ color: 212121
 permalink: /kaabilraees/
 categories: entertainment bollywood box-office comparison
 width: medium
-img: collection-1.png
+img: kaabilvsraees.jpg
 status: publish
 published: true
 output: html_document
