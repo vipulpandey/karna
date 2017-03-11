@@ -64,4 +64,4 @@ ul.contact-ul {
 
 <div class="fb-page" data-href="https://www.facebook.com/Statsmatter/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Statsmatter/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Statsmatter/">Stats Matter</a></blockquote></div>
 
-<!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/f60ebc6c4e66595e9c5d6a8efcbd8560.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 50%; border: 0; overflow: hidden;"></iframe>
+<!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/f60ebc6c4e66595e9c5d6a8efcbd8560.html" scrolling="yes" allowtransparency="true" class="lightwidget-widget" style="width: 50%; border: 0; overflow: hidden;"></iframe>
